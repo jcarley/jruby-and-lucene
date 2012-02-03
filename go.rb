@@ -2,15 +2,19 @@ require 'java'
 require 'lib/lucene-core-3.1.0.jar'
 
 module Lucene
+
   module Store
     include_package 'org.apache.lucene.store'
   end
+  
   module Index
     include_package 'org.apache.lucene.index'
   end
+  
   module Doc
     include_package 'org.apache.lucene.document'
   end
+
   module Search
     include_package 'org.apache.lucene.search'
   end
